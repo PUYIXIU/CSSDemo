@@ -1,0 +1,66 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表单</title>
+        <style></style>
+    </head>
+    <body>
+        <!-- 
+            input标签
+                button
+                    按钮 value设置名字
+                reset
+                    重置按钮
+                color
+                    选择颜色
+                    使用的比较少，浏览器兼容问题比较大
+                email
+                    要求提交的数据必须满足电子邮件的格式
+            button标签
+                和input标签中的button属性相比
+                button标签可以编写一些更加复杂的结构
+                可选值
+                    submit 提交
+                    reset 重置
+                    button 单纯的按钮
+         -->
+        <form action="target.html">
+            文本框：<input type="text">
+            <br>
+            <input type="submit">
+            <br>
+            按钮：
+            <input type="button" value="按钮">
+            <br>
+            重置按钮：
+            <input type="reset" value="我tm是重置">
+            <br>
+            <button type="submit">我也tm是提交</button>
+            <button type="reset">重置</button>
+            <button type="button">单纯的按钮</button>
+            <br>
+            <input type="color">
+            <br>
+            <input type="email"> 
+            <br><br>
+            <!-- 
+                input中的属性：
+                    autocomplete：是否开启自动补全功能
+                        on：添加补全功能
+                        off：关闭补全功能
+                        要是想对全表单的输入进行自动补全功能的设置
+                        可以直接在form标签中进行设置
+                    readonly：将表单项设置为只读
+                    disabled：将表单项设置为禁用
+                        readonly的内容可以提交到服务器
+                        但是disabled的内容无法提交
+                    autofocus：设置表单项自动获取焦点
+                        被添加autofocus的表单项会优先自动获取光标焦点
+             -->
+            <input type="text" name="a" autocomplete="on" autofocus>
+            <input type="text" name="b" value="改不掉的哦" readonly>
+            <input type="text" name="c" value="被禁用了哦" disabled>
+        </form>
+    </body>
+</html>

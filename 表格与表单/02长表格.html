@@ -1,0 +1,42 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>长表格</title>
+    </head>
+    <body>
+        <!-- 
+            可以将一个表格分成三个部分
+            thead 头部
+            tbody 主体
+            tfoot 底部
+
+            th：头部特用单元格
+                会有加粗居中效果
+         -->
+         <table border="1" align="center" width="50%">
+            <thead>
+                 <tr>
+                    <th>种类</th>
+                    <th>价格</th>
+                    <th>甜度</th>
+                    <th>温度</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>波波奶茶</td>
+                    <td>12￥</td>
+                    <td>高糖</td>
+                    <td>热</td>
+                </tr>
+            </tbody>
+             <tfoot>
+                 <tr>
+                     <td></td>
+                     <td colspan="3">合计</td>
+                 </tr>
+             </tfoot>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表单</title>
+        <style></style>
+    </head>
+    <body>
+        <!-- 
+            表单：用于提交数据
+                网页中的表单用于将本地的数据提交给服务器
+            form中必须要有的属性：action
+                action
+                    指定表单要提交的地址
+            input标签
+                text：文本框
+                submit：提交
+                        value：指定文字
+                radio：单选
+                       使用name属性标识两个选框是属于同一类的
+                        checked表示单选按钮默认选中
+                checkbox：多选框
+            select：下拉列表标签
+                格式:
+                     <select name="haha" id="">
+                          <option value="1">北京</option>
+                          <option value="2">上海</option>
+                          <option value="3">南京</option>
+                          <option value="4">徐州</option>
+                     </select>
+                同样，select中selected表示默认选中
+            数据要提交到服务器中，必须要为元素指定一个name值
+         -->
+         <form action="target.html">
+                文本框：<input type="text" name="uname">
+                <br>
+                密码框：<input type="password">
+                <br>
+                单选按钮：<br>
+                osy<input type="radio" name="danxuan" value="hsy" checked>
+                wxh<input type="radio" name="danxuan" value="wsh">
+                <br>
+                多选框：<br>
+                妈的<input type="checkbox" name="duoxaun" value="妈的" checked>  
+                现在我<input type="checkbox" name="duoxaun" value="现在我">
+                累死了<input type="checkbox" name="duoxaun" value="累死了">
+                <br>
+                下拉列表：
+                <select name="haha" id="">
+                    <option value="1">北京</option>
+                    <option value="2" selected>上海</option>
+                    <option value="3">南京</option>
+                    <option value="4">徐州</option>
+                </select>
+                <br>
+                <input type="submit" value="好困呦">
+         </form>
+    </body>
+</html>

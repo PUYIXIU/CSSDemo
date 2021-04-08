@@ -1,0 +1,41 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表格</title>
+        <style></style>
+    </head>
+    <body>
+        <!-- 
+            表格table
+                tr：表格中的一行
+                    td：一个单元格
+            横向合并单元：colspan
+            纵向合并单元：rowspan
+         -->
+         <table border="1" width="50%" align="center">
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+                <td>D1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>D2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td rowspan="2">B3</td>
+                <td>C3</td>
+                <td>D3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td colspan="2">C4</td>
+            </tr>
+         </table>
+    </body>
+</html>
