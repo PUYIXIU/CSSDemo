@@ -1,0 +1,59 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>盒子模型-内边距</title>
+        <style>
+            /*
+                内边距(padding)
+                    内容区和边框之间的距离
+                    一共有四个方向的内边距
+                        padding-top
+                        padding-right
+                        paading-bottom
+                        padding-left
+                    内边距的设置会影响到盒子的大小
+                    背景颜色会延伸到内边距上
+                    一个盒子的可见框的大小
+                        由内容区、内边距、边框共同决定
+                    所以在计算盒子大小时
+                    需要将着三个区域和加到一起计算
+                内边距简写属性：
+                    padding
+                    可以同时指定四个方向的内边距
+            */
+            .box1{
+                background-color: tomato;
+                width:200px;
+                height:200px;
+
+                border: 10px chocolate solid;
+
+                padding-top:10px;
+                padding-right:20px;
+                padding-bottom: 30px;
+                padding-left:40px;
+
+            }
+            .box2{
+                background-color: crimson;
+                width: 100%;
+                height:100%;
+                padding:5px 5px 5px 5px; /*内边距简写模式*/
+            }
+            .box3{
+                background-color: darkblue;
+                width:100%;
+                height:100%
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box2">
+                <div class="box3"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

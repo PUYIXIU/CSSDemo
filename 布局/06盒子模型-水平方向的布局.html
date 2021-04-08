@@ -1,0 +1,58 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>盒子模型-水平方向的布局</title>
+        <style>
+            /*
+                元素水平方向的布局：
+                    元素在其父元素中
+                    水平方向的位置有以下几个属性共同决定：
+                        margin-left
+                        border-left
+                        padding-left
+                        width
+                        padding-right
+                        border-right
+                        margin-right
+                    一个元素在其父元素中，
+                    水平布局必须要满足以下等式
+                        ml+bl+pl+width+pr+br+mr=父元素内容区的宽度
+                    如果相加结果与等式不成立，则称其为过度约束，等式会自动调整
+                        调整方式：
+                            如果七个值没有auto的设置
+                                 则浏览器会自动调整margin-right的值以使等式满足
+                            这七个值中有三个值和设置为auto
+                                width
+                                margin-left
+                                margin-right
+                                如果某个值为auto，则会自动调整为auto的值以使等式满足
+                                如果将宽度和一个外边距同时设置为auto，
+                                    则宽度会调整到最大，外边距为0
+                                如果将三个值设置为auto
+                                    则宽度会调整到最大，其余为0
+                                如果将两个外边距设置为auto，width固定
+                                    则会把两个外边距设置为固定的值（居中）
+                                    所以我们经常使用这种方法让元素在父元素中水平居中
+        
+            */
+            .outer{
+                width:400px;
+                height:200px;
+                border:10px crimson solid;
+            }
+            .inner{
+                width: 100px;
+                height:200px;
+                background-color: cyan;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>
