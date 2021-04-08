@@ -1,0 +1,58 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>关键帧</title>
+        <style>
+            .outer{
+                height: 500px;
+                border-bottom: 10px black solid;
+                marign:50px auto;
+                overflow: hidden;
+            }
+            .box1{
+                float: left;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color:lightblue;
+                animation:ball 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-out;
+            }
+            /*创建小球下落动画*/
+            @keyframes ball{
+                0%{
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+                25%{
+                    margin-top: 400px;
+                    margin-left:100px;
+                    animation-timing-function: ease-in;
+                }
+                50%{
+                    margin-top: 100px;
+                    margin-left: 200px;
+                    animation-timing-function: ease-in;
+                }
+                75%{
+                    margin-top: 400px;
+                    margin-left: 350px;
+                }
+                100%{
+                    margin-top: 200px;
+                    margin-left: 400px;
+                    animation-timing-function: ease-in;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>旋转</title>
+        <style>
+            html{
+                perspective: 800px;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: #bfa;
+                background-image: url(/练习/练习9-小米官网/img/mi-home.png);
+                background-size:cover;
+                margin:100px auto;
+                /*
+                    通过旋转可以使元素沿着x y z轴旋转指定的角度
+                        rotateX(xxdeg)沿着x轴旋转
+                        rotateY(xxturn)沿着y轴旋转
+                        rotateZ(xxdeg)沿着z轴旋转
+
+                */
+                transform:rotateY(0deg);
+                transition:all 1s;
+            }
+            .box1:hover{
+                /* transform:rotateZ(1turn); */
+                transform:rotateY(180deg);
+                /*
+                    backface-visibility
+                        设置是否显示元素的背面
+                */
+                backface-visibility:visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+    </body>
+</html>

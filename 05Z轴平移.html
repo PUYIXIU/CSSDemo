@@ -1,0 +1,40 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Z轴平移</title>
+        <style>
+            html{
+                /*
+                    设置当前网页的视距为800
+                    一般情况下视距设置为800-1000
+                */
+                perspective: 800px;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: #bfa;
+                margin:200px auto;
+                /*
+                    Z轴平移
+                        调整元素在z轴的位置
+                        正常些情况下就是调整元素和人眼之间的距离
+                        距离越大，元素离人越近
+                        Z轴的平移属于立体效果（近大远小）
+                        默认情况下网页不支持透视
+                        如果需要看见这个效果
+                        必须要设置网页的视距
+                */
+                transform:translateZ(100px);
+                transition:all 0.5s;
+            }
+            .box1:hover{
+                transform:translateZ(300px)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+    </body>
+</html>
