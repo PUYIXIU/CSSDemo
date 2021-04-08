@@ -1,0 +1,29 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>阿里iconfont字体库</title>
+        <!-- 需要将iconfont引入 -->
+        <link rel="stylesheet" href="iconfont/iconfont.css">
+        <style>
+            i.iconfont{
+                font-size:30px ;
+                color:rgb(255, 152, 152)
+            }
+            p::before{
+                content:'\eb8d';
+                font-family: "iconfont";
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            iconfont同样也可用实体、类和伪类三种方法使用
+         -->
+        <i class="iconfont">&#xec80;</i>
+        <i class="iconfont">&#xec6d;</i>
+        <i class="iconfont icon-bug"></i>
+        <p>hello</p>
+    </body>
+</html>

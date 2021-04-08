@@ -1,0 +1,65 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>图标字体</title>
+        <!--将all.css引入-->
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <style>
+            /*
+                图标字体（iconfont）
+                    在网页中经常需要使用一些图标
+                    可以通过图片来引入图标
+                    但是图片本身比较大，且会失真，也无法改变颜色
+                所以在使用图标时，可以直接将图标设置为字体
+                通过font-face的形式来对字体进行引入
+                这样我们就可以直接通过使用字体的形式来使用图标了
+                
+                使用图标字体
+                    1、直接使用类名来使用图标字体
+                        class="fas fa-cat"
+                        fas是固定的 后面的是要用到的类
+                        有一些是fas，还有一些是fab，基本上是这两类
+                    
+
+            */
+            li{
+                list-style: none;
+
+            }
+            li::before{
+                /*
+                    2、 通过伪元素来设置图标
+                        content：设置图标编码，编码前注意加反斜杠\
+                        font-family：设置字体族
+                        font-weight：设置相应的字体样式
+                */
+                content:'\f56b';
+                font-family:'Font Awesome 5 Free' ;
+                font-weight: 900;
+                color:rgb(255, 116, 116)
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 使用i标签来调用iconfont元素 -->
+            <i class="fas fa-cat" style="font-size: 100px;color:lightcoral;background-color:rgb(203, 235, 255);"></i>
+            <i class="fas fa-ban"></i>
+            <ul>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+                <li>444</li>
+            </ul>
+            <!-- 
+                方法3
+                    直接给元素添加图标字体的class
+                方法4
+                    添加实体
+                    &#xf6d5;
+             -->
+             <span class="fas fa-fish">
+                &#xf6d5; <!-- 这是一个实体 -->
+            </span>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>文本的水平和垂直对齐</title>
+        <style>
+            /*
+                text-align：文本的水平对齐
+                    可选值：
+                        left 左侧对齐
+                        right：右侧对齐
+                        center：居中对齐
+                        justify：两端对齐
+                vertical-align：设置元素的垂直对齐
+                    可选值：
+                        baseline：默认方式，基线对齐
+                        top：顶部对齐
+                        bottom：底部对齐
+                        middle：居中对齐
+                        也可以直接指定值
+
+            */
+            p{
+                border:1px solid sienna;
+            }
+            img{
+                /*
+                    图片对齐的问题
+                    可以是用vertical-align解决
+                    只要不是设置为基线就不会留白
+                */
+                vertical-align: bottom;
+            }
+            span{
+                font-size:20px;
+                vertical-align:middle;
+            }
+            div{
+                width:500px;
+                border:1px solid lightcoral;
+                text-align: justify;  /*水平对齐*/
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            3月15日，外交部发言人赵立坚主持例行记者会。
+
+有记者提问，美国联邦通信委员会（FCC）认定华为中兴等几家中国公司威胁美国家安全，中方对此有何评论？
+
+赵立坚表示，美方的做法毫无事实依据，也毫无道理。美国政府为了维护美国科技垄断和霸权地位，泛化国家安全概念，滥用国家力量，不择手段打压中国高科技企业，这是对美方一贯标榜的市场经济原则的完全否定，也戳穿了美方所谓公平竞争的虚伪面目。
+
+赵立坚指出，美国利用其先进科技优势，通过安装后门等方式，对包括盟友在内的世界其他各国进行大规模无差别的窃听窃密。美国是地地道道的窃听帝国、窃密帝国、黑客帝国。美国的做法严重损害威胁他国的安全。
+
+赵立坚表示，对此美国还是要有点自知之明，我们希望美方停止对中国企业的无理打压，为中国企业经营投资提供公平、开放、公正、非歧视的营商环境。
+        </div>
+        <p>
+            <img src="/练习/CSS盒子模型练习/练习1-京东图片列表/img/35.png" alt="">
+        </p>
+    </body>
+</html>

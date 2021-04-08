@@ -1,0 +1,49 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>字体族</title>
+        <style>
+            /*
+                字体样式相关：
+                    color 设置字体颜色
+                    font-size 字体大小
+                        em 相当于当前元素的一个font-size
+                        rem 相当于根元素的一个font-size
+                    font-family 字体族（字体的格式）
+                        serif 衬线字体（）
+                        sans-serif 非衬线字体
+                        monospace 等宽字体
+                        cursive
+                        fantasy
+                            指定字体的类别，浏览器会自动使用该类别下的字体
+                            可以同时指定多个字体，防止某一字体缺失的情况
+                            不要用太少用的字体，因为用户的电脑上可能无法调出
+
+            */
+            @font-face {
+                /*
+                    @font-face属性可以将服务器中的字体直接提供给用户使用
+                    1、但是会导致网页存在加载速度的问题
+                    2、并且也需要注意版权的问题
+                    3、字体格式的问题
+                       这里可以添加多个src路径多种字体格式
+                       以便多个浏览器兼容
+                    4、format 格式
+                */
+                font-family:'myFont' ; /*指定字体名字*/
+                src: url(font/RocknRoll\ One.ttf); /**/
+            }
+            p{
+              color:rgb(221, 174, 103);  
+              font-size:20px;
+              font-family:myFont,"幼圆";
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            hello，今天好累啊
+        </p>
+    </body>
+</html>

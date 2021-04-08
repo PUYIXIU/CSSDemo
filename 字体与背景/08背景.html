@@ -1,0 +1,108 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>北京</title>
+        <style>
+            /*
+                background-color：
+                    设置背景颜色
+                background-image：
+                    设置背景图片
+                    可以同时设置背景颜色和背景图片
+                    如果背景图片<背景元素
+                        背景图片会自动在元素中平铺
+                        直到将背景元素填满
+                    如果背景图片>背景元素
+                        图片将会无法完全显示
+                background-repeat：
+                    设置背景图片的重复方式
+                    可选值：
+                        repeat：默认值
+                            背景会沿着x轴、y轴重复平铺
+                        repeat-x：沿着x轴重复
+                        repeat-y：沿着y轴重复
+                        no-repeat：背景图片不重复
+                background-position：
+                    设置背景图片的位置
+                        设置方式：
+                            通过top left right bottpm center几个表示方位的词来设置背景图片的位置
+                                使用方位值时，需要使用两个值，
+                                如果只写一个，默认第二个值是center
+                            还可以通过指定偏移量来指定图片的位置
+                                水平偏移量
+                                垂直偏移量
+                    background-clip：
+                        如果不做任何设置
+                        边框下面也会出现背景
+                        默认值：border-box
+                            可选值：
+                            border-box：默认值
+                                背景会出现在边框的下面
+                            padding-box：背景不会出现在边框上
+                                只会出现在内边距和内容区上
+                            content-box：背景只会出现在内容区
+                    background-origin：
+                        背景图图片的偏移量计算的原点
+                        可选值：
+                            padding-box：默认值
+                                background-posiiton从内边距处开始计算
+                            content-box：
+                                background-position从内容区处开始计算
+                            border-box：
+                                background-positon从边框处开始计算
+                    background-size：
+                        背景图片的尺寸
+                        第一个值表示宽度
+                        第二个值表示高度
+                        也可以只写一个值，另一个值会根据尺寸自动设置
+                        其他可选值：
+                            cover：图片比例不变，将元素铺满
+                            contain：图片比例不变，将图片在元素中完整显示
+                        
+            */
+            .box1{
+                width:500px;
+                height: 500px;
+                background-color: aquamarine;
+                background-image: url("img/古风水墨毛笔圆圈.png");
+                background-repeat: no-repeat;
+                background-position:center 0px;
+                border:10px double chocolate;
+                background-clip:border-box;
+                background-origin: content-box;
+                background-size: cover;
+                overflow:auto ;
+            }
+            /*
+                background-attachment：
+                    可以设置背景图片是否跟随元素移动
+                    默认值：scroll
+                    可选值：
+                        scroll：元素值会跟对元素移动
+                        fixed：背景会固定在页面中
+                               不会跟随元素移动
+                background：
+                    背景相关的简写属性
+                    所有相关的样式都可以用background进行部署
+                    没有顺序要求
+                        但是background-size一定要写在background-position的后面
+                            具体格式：
+                                background-position/background-size
+                        并且background-origin一定要写在background-clip的前面
+                            具体格式：
+                                background-origin/background-clip
+            */
+            .box2{
+                width: 100px;
+                height: 1000px;
+                background: coral url('img/复古祥云中国风底纹.png') fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box2" ></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>径向渐变</title>
+        <style>
+            /*
+                径向渐变
+                radial-gradient()
+                默认情况下，径向渐变的形状是根据元素的形状来计算的
+                也可以手动指定径向渐变的大小
+                repeating-radial-gradient()表示平铺径向渐变
+                形状可选值：
+                    circle 正圆
+                    elipse 椭圆
+                也可以设置圆心的位置：
+                    at xxx xxx
+                    at center
+                    at top
+                    at bottom
+                    at left
+                    at right
+                    at top left
+                可也以指定渐变的扩散大小
+                    closest-side 近边
+                    closest-corner 近角
+                    farthest-side 远边
+                    farthest-corner 远角
+            */
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-image: radial-gradient(farthest-corner at 10px 10px,yellow ,black);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+    </body>
+</html>
