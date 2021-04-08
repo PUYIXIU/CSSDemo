@@ -1,0 +1,39 @@
+/*
+    less中的多行注释
+    这种和css相同样式的注释会被解析到css文件中
+*/
+.box1 {
+  background-color: #ffafaf;
+}
+.box1 .box2 {
+  background-color: #a0ffdf;
+}
+.box1 .box2 .box3 {
+  background-color: #ecbbff;
+}
+.box1 .box4 {
+  background-color: #b16c6c;
+}
+/*变量也可以放类名*/
+.box4 {
+  /*使用变量时，如果是直接使用则以@变量名的形式使用即可*/
+  width: 100px;
+  height: 100px;
+  border: #385838 1px solid;
+  color: red;
+  background-color: red;
+}
+/*
+    变量发生重名时
+    会优先使用比较近的变量
+
+    可以在变量声明前就使用变量
+*/
+a {
+  /*作为类名、或者一部分值使用时，必须以@{变量名}的形式使用*/
+  display: block;
+  width: 100px;
+  height: 300px;
+  color: yellow;
+  background-img: url("a/1.png");
+}

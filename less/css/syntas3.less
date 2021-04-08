@@ -1,0 +1,23 @@
+//混合合数
+//在混合函数中可以制剂和设置变量
+//函数定义时可以给传递的参数指定1默认值
+.test(@w,@h,@color:orange){
+    width: 100px;
+    height: @w;
+    border:1px solid @color;
+}
+.box1{
+    //调用混合函数，按顺序传递参数
+    .test(100,200);
+    
+}
+.box2{
+    //按名字传参数
+    .test(@h:100px,@w:100px);
+}
+span{
+    //对颜色取平均值
+    color:average(#ff6600, #999999);
+    //darken对颜色进行加深
+    background-color: darken(#4d8a0f,20%);
+}

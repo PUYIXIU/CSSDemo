@@ -1,0 +1,14 @@
+.box1 {
+  width: 100px;
+  height: 100;
+  border: 1px solid orange;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid orange;
+}
+span {
+  color: #cc804d;
+  background-color: #1a2e05;
+}
