@@ -1,0 +1,39 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>复合选择器</title>
+        <style>
+            .cc{
+                color:wheat;
+            }
+            div.cc{ /*复合选择器*/
+                font-size:10;
+            }
+            .cc.aa{
+                font-weight: 900;
+            }
+            h1,span{
+                color:thistle
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            1、复合选择器（交集选择器）
+                作用：选中同时复合多个条件的元素
+                语法：选择器1选择器2选择器3...{}
+                注意点：
+                    交集选择器中如果有元素选择器
+                    必须使用元素选择器开头
+            2、选择器分组（并集选择器）
+                作用：同时选择多个选择器对应的元素
+                语法：选择器1,选择器2...{}
+
+         -->
+         <div class="cc">我是div</div>
+         <p class="cc aa">我是p标签</p>
+         <h1>koukouda</h1>
+         <span>sibalaxi</span>
+    </body>
+</html>

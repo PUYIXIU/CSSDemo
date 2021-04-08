@@ -1,0 +1,61 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGB值</title>
+        <style>
+            /*
+                颜色单位
+                    在CSS中可以直接使用颜色名来设置各种颜色
+                    也可以使用RGB值来调用颜色
+                    RGB值：
+                        通过红绿蓝三种颜色的调配来获取颜色
+                        每一种颜色的范围在0-255(0%-100%)之间
+                        语法：RGB(红色，绿色，蓝色)
+                    RGBA:
+                        语法：RGBA(红色，绿色，蓝色，透明度)
+                    十六进制的RGB值：
+                        语法：#红色绿色蓝色
+                        颜色浓度：00-FF
+                        如果颜色两位重复可以进行简写：
+                        AABBCC->ABC
+                    Hsl值
+                        H 色相(0-360)
+                        S 饱和度(0-100)
+                        L 亮度(0-100)
+                    Hsla值
+            */
+            .box1{
+                width:100px;
+                height:100px;
+                background-color:#BFA;
+            }
+            .box2{
+                width:50%;
+                height:50%;
+                background-color:rgba(200,100,200, 90);
+            }
+            .box3{
+                width:100px;
+                height:100px;
+                background-color:hsl(99, 90, 90);
+            }
+            .box4{
+                width:50%;
+                height:50%;
+                background-color:hsl(200, 50,50);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+
+         -->
+        <div class="box1">
+            <div class="box2"></div>
+        </div>     
+        <div class="box3">
+            <div class="box4"></div>
+        </div>
+    </body>
+</html>

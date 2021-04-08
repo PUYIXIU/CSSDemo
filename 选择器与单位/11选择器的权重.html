@@ -1,0 +1,72 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>选择器的权重</title>
+        <style>
+            /*
+                样式的冲突：
+                    当通过不同的选择器，选中相同的元素
+                    并且为相同的样式设置不同的值
+                    此时就发生了样式的冲突
+                    发生样式冲突时，应由选择器的权重（优先级）决定
+                选择器的权重：
+                    内联样式        1000
+                    id选择器        100 
+                    类和伪类选择器   10
+                    元素选择器       1
+                    通配选择器*       0
+                    继承的样式       没有优先级
+                比较优先级时，需要将所有的选择器的优先级进行相加计算
+                最后优先级越高，则优先显示
+                分组选择器（并集选择器）是单独计算
+                如果优先级计算相等，则有限使用靠下的样式
+                可以在某一个样式的后边添加!important（不建议使用）
+                则此时该样式会获取到最高优先级，甚至超过内联样式
+            */
+            #box1{
+                color:turquoise;
+            }
+            div#box1{
+                color:thistle
+            }
+            .red{
+                color:teal
+            }
+            div,span{
+                color:violet
+            }
+            a:visited{
+                color:black;
+                background-color: tomato;
+            }
+            a::selection{
+                color:cadetblue;
+                background-color: chocolate;
+            }
+            a:link{
+                color:thistle;
+                background-color: teal;
+            }
+            a:hover{ /*hover要写在active的后面才起作用*/
+                color:blanchedalmond;
+                background-color: brown;
+            }
+            a:active{
+                color:yellowgreen;
+                background-color: violet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 
+
+         -->
+         <a href="javascrpt:;">点我点我</a>
+         <a href="#">点我点我</a>
+         <div id="box1" class="red">
+            累了，毁灭吧
+         </div>
+    </body>
+</html>

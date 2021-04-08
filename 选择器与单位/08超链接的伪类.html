@@ -1,0 +1,45 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>超链接的伪类</title>
+        <style>
+            /*  
+                超链接专属伪类
+                1、访问过的标签
+                    visited用来表示访问过的链接
+                    由于隐私的问题
+                    visited属性只能修改链接的颜色
+                2、没有访问过的标签
+                    link用来表示普通的链接
+                    包括访问过的和没有访问过的
+                    即普通状态
+                鼠标伪类
+                :hover  鼠标移入时改变
+                :active 鼠标点击时的状态
+            */
+            a:link{
+                color:wheat;
+                font-size:30;
+            }
+            a:visited{
+                font-size:20;
+                color:tomato;
+            }
+            a:hover{
+                color:teal
+            }
+            a:active{
+                color:thistle
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+
+         -->
+         <a href="http://www.baidu.com">百度</a>
+         <br>
+         <a href="#">百度</a>
+    </body>
+</html>

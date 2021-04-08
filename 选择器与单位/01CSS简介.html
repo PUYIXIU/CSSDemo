@@ -1,0 +1,62 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS简介</title>
+        <!-- 内部样式表 -->
+        <style>
+            h1{
+                color:peachpuff;
+                font-size:20;
+            }
+            p{
+                color:slategray;
+                font-size:20;
+            }
+        </style>
+        <!-- 外部样式表 -->
+        <link rel="stylesheet" href="style01.css">
+    </head>
+    <body>
+        <!-- 
+            CSS：层叠样式表
+                网页实际是一个多层的结构
+                通过CSS可以分别为网页的每一层来设置样式
+                最终我们能看到的只是网页的最上边一层
+                CSS能用来设置网页中元素的样式
+            使用CSS来修改元素的样式
+                1.方式一（内联样式/行内样式）
+                    在标签内部通过style属性来设置元素的样式
+                    style="属性1:值1;属性2:值2;....."
+                    开发时不推荐使用
+                    样式只能对一个标签有效，维护麻烦
+                2.方式二（内部样式表）
+                    将样式编写到head中的style标签里
+                    可以为多个标签设置样式，维护方便
+                    但是只能对一个网页有效
+                    不能跨页面使用
+                    标签{
+                        属性1:值1;
+                        属性2:值2;
+                        ....
+                    }
+                3.方式三（外部样式表）
+                    可以将css样式编写到一个外部的css文件当中
+                    然后通过link标签引入外部的css文件
+                    可以引入想要布局的网页中，维护方便
+                    将样式编写到外部的css文件中
+                    可以使用到浏览器的缓存机制
+                    从而加快网页的加载速度，提高用户的体验
+                    <link rel="stylesheet" href="style01.css">
+         -->
+         <p style="color:palevioletred;font-size:30">全体目光向我看齐！金卡姆271更新啦！</p>
+         <h1>奇怪的阴间场面增加了！</h1>
+         <p>阿希莉帕酱千万不要相信鹤见中尉啊</p>
+         <ul>
+             <li>清明节假期</li>
+             <li>五一节假期</li>
+             <li>儿童节假期</li>
+             <li>然后就是暑假啦！</li>
+         </ul>
+   </body>
+</html>

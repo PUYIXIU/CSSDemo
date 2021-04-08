@@ -1,0 +1,52 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>常用选择器</title> 
+        <style>
+            p{
+                color:tomato;
+            }
+            #pp{
+                color:teal;
+            }
+            .cc{
+                color:thistle;
+            }
+            .ll{
+                font-size:20;
+            }
+            *{
+                font-weight:900
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            将所有的段落设置为同一颜色
+            1、元素选择器
+                作用：根据标签名来选中指定的元素
+                语法：标签名{}
+            2、id选择器
+                作用：根据元素的id属性选中一个元素
+                语法：#id{}
+                id是不能重复的
+            3、类选择器（class选择器）
+                class是标签的一个属性
+                它和id类似，不同的是class可以重复使用
+                可以同时为一个元素指定多个class属性
+                多个class使用空格隔开，比如：
+                class="aa bb cc"
+                作用：根据元素的class属性值先选中一组元素
+                语法：.class{}
+            4、通配选择器
+                作用：选中页面中多个所有元素
+                语法：*
+         -->
+         <h1>权游确实很好看！</h1>
+         <p>没吃中午饭</p>
+         <p id="pp">肚子饿饿</p>
+         <p class="cc">头脑晕晕</p>
+         <p class="cc ll">晚上又要吃鱼汤面吗？</p>
+    </body>
+</html>

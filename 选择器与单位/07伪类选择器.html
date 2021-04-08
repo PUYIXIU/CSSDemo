@@ -1,0 +1,73 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>伪类选择器</title>
+        <style>
+            /*
+                伪类：不存在的类，特殊的类
+                    用于描述一个元素的特殊状态
+                    比如：
+                        第一个子元素
+                        被点击的元素
+                        鼠标移入的元素
+                    伪类一般情况下都是使用:开头
+                        :first-chlid 选中第一个子元素
+                        :last-chlid 选中最后一个子元素
+                        :nth-chlid() 选中第n个子元素 
+                            特殊值：
+                                n    第n个 n∈[0，正无穷）
+                                2n   选中偶数位的元素
+                                2n+1 选中奇数位的元素
+                                odd  与2n+1同作用
+                                even 与2n同作用
+                        以上的伪类是根据所有的子元素进行排序的
+                        即ul>li:first-chlid不是指选中ul下所有li中的第一个li
+                        而是指选中ul下所有元素的第一个元素
+                        :first-of-type
+                        :last-of-type
+                        :nth-of-type()
+                            这几个伪类的功能和上述的类似
+                            不同点是它们是在同类项元素中进行排序
+                        :not() 否定伪类
+                            将复合条件的元素从选择器中去除
+            */
+            ul>li:first-chlid{ /*选中第一个子元素*/
+                color:steelblue;
+            }
+            ul>li:last-chlid{/*选中最后一个子元素*/
+                color:tan;
+            }
+            ul>li:nth-chlid(3){
+                color:thistle;
+            }
+            ol>li:nth-of-type(odd){
+                color:tomato
+            }
+            ol>li:not(:nth-of-type(odd)){
+                color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            VScode自带的插件
+            使用父类>子类*个数，能够快速创建标签
+         -->
+         <ul>
+             <li>饿死我了</li>
+             <li>吃点啥好</li>
+             <li>鱼汤面吧</li>
+             <li>又来？</li>
+             <li>算啦！</li>
+         </ul>
+         <ol>
+             <span>hhhh</span>
+             <li>111</li>
+             <li>222</li>
+             <li>333</li>
+             <li>444</li>
+             <li>555</li>
+         </ol>
+    </body>
+</html>
