@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询特性</title>
+    <!-- 
+        媒体特性：
+            width：视口的宽度
+            height：视口的高度
+     -->
+     <style>
+         /*
+         @media(width=500px){}
+            表示当视口宽度=500时样式生效
+            一般使用min-width和max-width
+            min-width：视口大于指定宽度时生效
+            max-width：视口小于指定宽度时生效
+            样式切换的分界点，我们称其为断点
+            网页的样式在断点发生变化
+            一般常用的断点：
+            max-width:768  超小屏幕 小于768生效
+            min-width：768 小屏幕   大于768生效
+            min-width：992 中屏幕   大于992生效
+            min-width:1200 大屏幕   大于1200生效
+
+            可以写多个断点选择，
+            ,表示或者
+            and表示并且
+            not表示除了
+         */
+        @media only screen and (min-width:500px) and (max-width:768px){
+            body{
+                background-color: rgb(128, 77, 77);
+            }
+        }
+     </style>
+</head>
+<body>
+    
+</body>
+</html>

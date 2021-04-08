@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 
+        设置视口的大小
+        device-width表示设备的宽度，即完美视口
+        initial-scale=1.0表示为初始化视口的一倍
+        和device-width的作用一样
+        都写上避免出现问题
+    -->
+    <!-- 将网页的视口设置为完美视口 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width">
+    <title>完美视口</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 168, 168);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        移动端默认视口大小：980css像素
+        默认情况下，移动短的像素比就是980/移动端网页宽度
+        如果直接在网页中编写移动端代码
+        会导致在980视口下，像素比不好
+        在编写移动页面时，要确保一个比较合适的像素比
+            1css像素=x个物理像素
+        所以要编写移动端页面的第一件事，
+        就是向调整好页面的像素比
+
+        调整视口大小的方式：
+            meta标签
+        每一款移动设备在设计时，都会有一个最佳像素比
+        一般只需要将像素比设置为该值
+        就可以得到一个最佳的效果，即完美视口
+     -->
+     <div class="box1"></div>
+</body>
+</html>

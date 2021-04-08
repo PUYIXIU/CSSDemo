@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性元素上的样式</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 600px;
+            height: 400px;
+            border:10px red solid;
+            display:flex;
+        }
+
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 131, 131);
+           order:3;
+            /*
+                flex-grpw：增长系数
+                flex-shrink：缩减系数
+                    缩减多少是根据缩减系数和元素大小来计算的
+                flex-basis:元素在主轴上的基础长度
+                    如果主轴是横向的 则该值是元素的宽度
+                    如果主轴是纵向的 则该值是元素的高度
+                    默认值是auto
+                flex：可以设置弹性元素的三个尺寸样式
+                    格式：
+                        flex:增长 缩减 基础
+                 默认值： initial auto none
+                 
+                 order：决定弹性元素的排列顺序
+            */
+            /* flex-grow: 1; */
+            /* flex-basis:100px; */
+        }
+        li:nth-child(2){
+            background-color: rgb(245, 255, 157);
+            order:1;
+        }
+        li:nth-child(3){
+            background-color: rgb(175, 212, 255);
+            order:2;
+        }
+    </style>
+</head>
+<body>
+     <ul>
+         <li>1</li>
+         <li>2
+             <div>2</div>
+         </li>
+         <li>3
+             <div>3</div>
+             <div>3</div>
+         </li>
+     </ul>
+</body>
+</html>
