@@ -1,0 +1,67 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>浮动的特点</title>
+        <link rel="stylesheet" href="/布局/CSS/webClear.css">
+        <style>
+            /*
+            1、
+                浮动元素不会盖住文字，
+                文字会自动环绕在浮动元素的周围
+                可以利用浮动来设置文字环绕图片的效果
+            2、
+                元素设置浮动以后
+                将会从文档流中脱离
+                其元素的特点也会发生变化
+                    块元素：
+                        1.块元素不再独占一面的一行
+                        2.脱离文档流以后
+                          块元素的宽度和高度默认都被内容撑开
+                    行内元素：
+                        行内元素脱离文档流后就会变成块元素
+                脱离文档流后就不需要区分块元素和行内元素了。
+             */
+             .box1{
+                 width: 100px;
+                 height: 100px;
+                 background-color: darkolivegreen;
+                 float:left;
+             }
+             .box2{
+                 background-color: darkorange;
+                 float: left;
+             }
+             .box3{
+                 background-color: darkred;
+             }
+             .span1{
+                 background-color: darksalmon;
+                 width:100px;
+                 height: 100px;
+                 float: left;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <p>
+            12日公布的“十四五”规划和2035年远景目标纲要明确提出，按照“小步调整、弹性实施、分类推进、统筹兼顾”等原则，逐步延迟法定退休年龄。
+
+            这些原则分别指的是什么？接下来到底怎么改？记者专访了人社部中国劳动和社会保障科学研究院院长金维刚。
+            
+            【小步调整——每年延迟几个月或每几个月延迟1个月】
+            
+            金维刚：小步调整简单理解就是延迟退休改革不会“一步到位”，而是采取渐进式改革，用较小的幅度逐步实施到位，每年延迟几个月或每几个月延迟1个月，节奏总体平缓。
+            
+            也就是说，政策实施后，退休年龄线会往后慢慢推。比如说，原本满50岁退休的女性，政策实施后，第一年，变成50岁1个月或几个月退休。不同年龄段的人，退休年龄不同。以此类推，经过若干年过渡期完成改革。
+            
+            可以确定的是，改革前期，临近退休的人，只会延迟1个月或几个月，不会出现一下子晚退休几年的情况。
+            
+            对年轻人来说，延长的退休年龄幅度会大一些，但未来有很长的过渡期和适应期。 
+        </p>
+        <div class="box2">hello</div>
+        <div class="box3">world</div>
+        <span class="span1">我是span1</span>
+    </body>
+</html>

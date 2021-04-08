@@ -1,0 +1,39 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BFC的演示</title>
+        <style>
+            /*
+                元素开启了BFC后可以确保
+                    不被其他元素所覆盖
+                    外边距不与父元素重叠
+            */
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                /* float: left; */
+                overflow: hidden;
+            }
+            .box2{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                overflow: hidden;
+            }
+            .box3{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(255, 254, 213);
+                margin-top:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box3"></div>
+        </div>
+        <div class="box2"></div>
+    </body>
+</html>
