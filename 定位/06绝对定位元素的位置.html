@@ -1,0 +1,41 @@
+<Doctype html>
+<html>
+    <meta charset="utf-8">
+    <title>绝对定位元素的位置</title>
+    <style>
+        /*
+            水平布局当添加了绝对定位后
+            水平方向布局等式就要添加left和right两个值
+                left+margin-left+border-left+padding-left+width+padding-right+border-right+margin-right+right
+                可以设置auto的值有
+                    margin width left right
+
+            垂直方向的等式也必须要满足
+                top/bottom+margin-top/bottom+border-top/bottom+padding-top/bottom+height
+
+            通过开启绝对定位，可以达到元素水平垂直居中的目的
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position:absolute;
+            left:0px;
+            right: 0px;
+            top:0px;
+            bottom:0px;
+            margin: auto;
+        }
+    </style>
+    <body>
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+    </body>
+</html>
